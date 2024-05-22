@@ -1,0 +1,223 @@
+%-------------------------
+% Resume in Latex
+% Author : Gaurav Mehla
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+\usepackage{fontawesome5}
+\usepackage{ragged2e}
+
+
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://mehla.in/}{\Huge Gaurav Mehla}} & \href{https://mehla.in/}{\faGlobe ~ https://mehla.in}\\
+  Email : \href{mailto:gaurav@mehla.in}{gaurav@mehla.in} & \href{https://linkedin.com/in/gauravmehla}{\faLinkedin ~ linkedin.com/in/gauravmehla} \\
+  Mobile : +1-778-322-6634 & \href{https://github.com/gauravmehla}{\faGithub ~ github.com/gauravmehla} \\
+\end{tabular*}
+
+% \begin{center}
+%     \textbf{\Huge \scshape Gaurav Mehla} \\ \vspace{5pt}
+%     \small +1(778)322-6634 $|$ \href{mailto:gaurav@mehla.in}{\underline{gaurav@mehla.in}} $|$ 
+%     \href{https://linkedin.com/in/gauravmehla}{\underline{linkedin.com/in/gauravmehla}} $|$
+%     \href{https://github.com/gauravmehla}{\underline{github.com/gauravmehla}} $|$
+%     \href{https://mehla.in}{\underline{mehla.in}}
+% \end{center}
+
+\begin{flushleft}
+\justifying
+    Eager technologist with 10 years of web app development and over 5 years in the industry. Skilled in RESTful APIs, single-page apps with React/Next JS, and scalable microservices. Strong in JavaScript and TypeScript. Familiar with AWS, Google Cloud, and Azure. Passionate about clean code and continuous learning in System Design, Data Analytics, ML/AI, and DevOps.
+\end{flushleft}
+
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Development Team Lead}{Apr 2019 -- Jan 2022}
+      {Flowace.ai}{Mumbai, IN}
+      \resumeItemListStart
+        \resumeItem{Led a 10-member development team providing guidance and support to ensure timely delivery}
+        \resumeItem{Built a Node.js app integrating with Salesforce webhooks for real-time data processing and database
+insertion}
+        \resumeItem{Designed and implemented a complex AWS cloud architecture, incorporating services such as Route
+53, EC2, RDS, SQS, SES, S3, Cloudfront, etc}
+      \resumeItemListEnd
+      
+   \resumeSubheading
+    {Senior Software Engineer}{May 2018 - Mar 2019}
+    {Flowace.ai}{Mumbai, IN}
+    \resumeItemListStart
+       \resumeItem{Decoupled monolith into Node.js and Go microservices for scalability and maintainability.}
+       \resumeItem{Built reporting and analytics microservices and increase the overall performance by 2.5x}
+       \resumeItem{Built real-time, fault tolerant, event-driven architecture using Web sockets, MQTT and Node.js}
+       \resumeItem{Built a full stack application using Angular, ReactJS, Loopback and MySQL}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineer}{Nov 2016 -- Mar 2018}
+      {LiveMedia Pvt Ltd}{New Delhi, IN}
+      \resumeItemListStart
+        \resumeItem{Built a full stack application using Angular, Express.js and MongoDB}
+        \resumeItem{Set-up CI/CD architecture using Jenkins and GitFlow}
+        \resumeItem{Build 2 hybrid mobile applications for iOS/android using Ionic which has +100k downloads on PlayStore}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------Recent PROJECTS-----------
+\section{Recent Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{\href{https://github.com/CSIS-4495-001/trademate}{/Trademate}} $|$ \emph{Next.js, Firebase, React, Typescript, Github}} {Sep 2023 -- Dec 2023} 
+          \resumeItemListStart
+            \resumeItem{Developed a full-stack web application using with Next.js and React as the frontend and Firebase as backend}
+            \resumeItem{Implemented full-screen and custom style map view using Google Maps API}
+            \resumeItem{Implemented authentication using social media and magic link email}
+            \resumeItem{Setup CI/CD pipeline using Github and Deployed on custom domain using Firebase hosting}
+            \resumeItemListEnd
+            
+            
+      \resumeProjectHeading
+          {\textbf{\href{https://github.com/CSIS-3275-001/PlayQuest}{/PlayQuest} } $|$ \emph{Thymeleaf, Spring Boot, Bootstrap, Maven, MySQL, Git}}{Jul 2023 -- Aug 2023}
+          \resumeItemListStart
+            \resumeItem{Developed a full-stack social media app to entertain gamers to sell their gaming profiles}
+            \resumeItem{Implemented continuous delivery using Github to build the app and deploy on AWS Elastic Beanstalk}
+            \resumeItem{Used tools like Junit and Mockito for testing}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Douglas College}{New Westminster, BC}
+      {Post Baccalaureate Diploma in Data Analytics, (Honors, Overall 3.8 GPA)}{Aug 2022 -- Feb 2024}
+    \resumeSubheading
+      {Kurukshetra University}{Kurukshetra, HR}
+      {Bachelor of Technology in Computer Science, (Honors, Overall 3.72 GPA)}{Aug. 2014 -- May 2018}
+  \resumeSubHeadingListEnd
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, C++, Go, Php, JavaScript, TypeScript, HTML/CSS} \\
+     \textbf{Frameworks}{: Angular, Next.js, React, Node.js} \\
+     \textbf{DevOps}{: Github, Jenkins, CircleCI, Firebase, Docker, K8s, Terraform, Google and AWS Cloud Platform} \\
+     \textbf{Developer Tools}{: Git, TravisCI, VS Code, Visual Studio, IntelliJ} \\
+     \textbf{Databases}{: MySql, Mongodb, Postgres}
+    }}
+ \end{itemize}
+
+%-----------Publications-----------
+\section{Publications}
+\resumeSubHeadingListStart
+    \resumeProjectHeading
+        {\textbf{\href{https://www.packtpub.com/product/the-javascript-workshop/9781838641917}{/The JavaScript Workshop}} $|$ \emph{The Packt Publications}}{Nov 2019}
+        {}{}
+\resumeSubHeadingListEnd
+ 
+\end{document}
